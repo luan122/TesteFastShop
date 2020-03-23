@@ -8,6 +8,7 @@ using TestFast.Api.Model;
 using TestFast.Application.Clientes.Interfaces;
 using TestFast.Application.Clientes.Dtos;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Http;
 
 namespace TestFast.Api.Controllers
 {
@@ -43,8 +44,10 @@ namespace TestFast.Api.Controllers
             }
             return NotFound(id);
         }
-
+            
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> Post([FromBody] ClienteModel cliente)
         {
             if (!ModelState.IsValid)
@@ -52,9 +55,14 @@ namespace TestFast.Api.Controllers
                 return BadRequest(ModelState);
             }
             var dto = _mapper.Map<ClienteDto>(cliente);
-            if (await _clienteApplicationService.InserirCliente(dto))
-                return Ok();
-            return BadRequest();
+            dto = await _clienteApplicationService.InserirCliente(dto);
+            if (dto != null)
+            {
+                cliente = _mapper.Map<ClienteModel>(dto);
+                return CreatedAtAction(nameof(Get), new { id = cliente.Id }, cliente);
+            }
+            else
+                return BadRequest();
         }
 
         [HttpPut("{id}")]
