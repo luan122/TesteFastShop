@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFast.Api", "1. Api\ModeloParaProjetoTddSolid.Api\TestFast.Api.csproj", "{FACD353E-0F50-4F81-8350-803893677160}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{642FADD1-DAB5-4A5B-A2FF-821ABAA945F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{67D825A2-0431-450D-92AF-811E7CF4D239}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{B14717A7-BD19-4AAA-BBAA-749FCD71DBAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Infrastructure", "{A8E31160-B093-482C-8689-3607D777156F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6E724C67-6C4B-4429-95D9-519AB7B6E607}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{101DA664-50A9-41AC-8EFE-BA05B824E421}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFast.Data.Data", "4. Infrastructure\Data\ModeloParaProjetoTddSolid.Data.Data\TestFast.Data.Data.csproj", "{644C7023-ABE8-4FC4-A135-0C1839B252D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Tests", "5. Tests", "{2673FDA4-6A2B-492C-A20C-7E32F08FC6DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFast.Cliente", "5. Tests\ModeloParaProjetoTddSolid.Tests\TestFast.Cliente.csproj", "{2D2766C0-99E2-4100-BE7E-9F29A7F63DBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFast.Domain.Clientes", "3. Domain\TestFast.Domain.Clientes\TestFast.Domain.Clientes.csproj", "{A61A6833-9DFD-438E-876F-F4203E031C51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFast.Application.Clientes", "2. Application\TestFast.Application.Clientes\TestFast.Application.Clientes.csproj", "{78676946-A429-4831-B780-5E5D57481796}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FACD353E-0F50-4F81-8350-803893677160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACD353E-0F50-4F81-8350-803893677160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACD353E-0F50-4F81-8350-803893677160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACD353E-0F50-4F81-8350-803893677160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{644C7023-ABE8-4FC4-A135-0C1839B252D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644C7023-ABE8-4FC4-A135-0C1839B252D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644C7023-ABE8-4FC4-A135-0C1839B252D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644C7023-ABE8-4FC4-A135-0C1839B252D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2766C0-99E2-4100-BE7E-9F29A7F63DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2766C0-99E2-4100-BE7E-9F29A7F63DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2766C0-99E2-4100-BE7E-9F29A7F63DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2766C0-99E2-4100-BE7E-9F29A7F63DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61A6833-9DFD-438E-876F-F4203E031C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61A6833-9DFD-438E-876F-F4203E031C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61A6833-9DFD-438E-876F-F4203E031C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61A6833-9DFD-438E-876F-F4203E031C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78676946-A429-4831-B780-5E5D57481796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78676946-A429-4831-B780-5E5D57481796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78676946-A429-4831-B780-5E5D57481796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78676946-A429-4831-B780-5E5D57481796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FACD353E-0F50-4F81-8350-803893677160} = {642FADD1-DAB5-4A5B-A2FF-821ABAA945F1}
+		{6E724C67-6C4B-4429-95D9-519AB7B6E607} = {A8E31160-B093-482C-8689-3607D777156F}
+		{101DA664-50A9-41AC-8EFE-BA05B824E421} = {A8E31160-B093-482C-8689-3607D777156F}
+		{644C7023-ABE8-4FC4-A135-0C1839B252D9} = {6E724C67-6C4B-4429-95D9-519AB7B6E607}
+		{2D2766C0-99E2-4100-BE7E-9F29A7F63DBD} = {2673FDA4-6A2B-492C-A20C-7E32F08FC6DA}
+		{A61A6833-9DFD-438E-876F-F4203E031C51} = {B14717A7-BD19-4AAA-BBAA-749FCD71DBAD}
+		{78676946-A429-4831-B780-5E5D57481796} = {67D825A2-0431-450D-92AF-811E7CF4D239}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0A78E50-3E3C-49AD-BE94-CA2C920EB0BB}
+	EndGlobalSection
+EndGlobal
