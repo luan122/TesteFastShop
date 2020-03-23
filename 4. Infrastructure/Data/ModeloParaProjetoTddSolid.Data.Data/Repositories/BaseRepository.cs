@@ -19,9 +19,10 @@ namespace TestFast.Data.Data.Repositories
             Db = context;
             DbSet = Db.Set<TEntity>();
         }
-        public virtual async Task Add(TEntity obj)
+        public virtual async Task<TEntity> Add(TEntity obj)
         {
             await DbSet.AddAsync(obj);
+            return obj;
         }
 
         public virtual async Task<TEntity> GetById(long id)
@@ -34,9 +35,10 @@ namespace TestFast.Data.Data.Repositories
             return DbSet;
         }
 
-        public virtual void Update(TEntity obj)
+        public virtual TEntity Update(TEntity obj)
         {
             DbSet.Update(obj);
+            return obj;
         }
 
         public virtual void Remove(long id)

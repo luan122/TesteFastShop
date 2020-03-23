@@ -8,10 +8,10 @@ namespace TestFast.Data.Data.Interfaces
 {
     public interface IBaseRepository<TEntity> : IDisposable where TEntity : class
     {
-        Task Add(TEntity obj);
+        Task<TEntity> Add(TEntity obj);
         Task<TEntity> GetById(long id);
         IQueryable<TEntity> GetAll();
-        void Update(TEntity obj);
+        TEntity Update(TEntity obj);
         void Remove(long id);
         Task<int> SaveChanges();
     }

@@ -50,11 +50,13 @@ namespace TestFast.Application.Clientes.Services
             return (await _clienteDomainService.SaveChanges()) > 0;
         }
 
-        public async Task<bool> InserirCliente(ClienteDto cliente)
+        public async Task<ClienteDto> InserirCliente(ClienteDto cliente)
         {
             var entity = _mapper.Map<ClientEntity>(cliente);
             await _clienteDomainService.Add(entity);
-            return (await _clienteDomainService.SaveChanges()) > 0;
+            if(await _clienteDomainService.SaveChanges() > 0)
+                return _mapper.Map<ClienteDto>(entity);
+            return null;
         }
     }
 }

@@ -12,6 +12,6 @@ namespace TestFast.Application.Clientes.Interfaces
         Task<ClienteDto> AdquirirCliente(long id);
         Task<bool> DeletarCliente(long id);
         Task<bool> ModificarCliente(ClienteDto cliente);
-        Task<bool> InserirCliente(ClienteDto cliente);
+        Task<ClienteDto> InserirCliente(ClienteDto cliente);
     }
 }
