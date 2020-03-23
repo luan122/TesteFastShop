@@ -31,8 +31,8 @@ namespace TestFast.Api.Middleware
             var json = new
             {
                 context.Response.StatusCode,
-                Mensagem = "Ocorreu um erro ao processar sua requisição, veja detalhes na propriedade \"Detalhe\"",
-                Detalhe = exception
+                Mensagem = "Ocorreu um erro ao processar sua requisição, veja detalhes na propriedade \"Detalhes\"",
+                Detalhes = exception
             };
 
             return context.Response.WriteAsync(JsonConvert.SerializeObject(json));
