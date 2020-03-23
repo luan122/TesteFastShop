@@ -6,7 +6,6 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using TestFast.Api.Model;
 using TestFast.Application.Clientes.Interfaces;
-using System.Web.Http.OData;
 using TestFast.Application.Clientes.Dtos;
 using Microsoft.AspNetCore.JsonPatch;
 
